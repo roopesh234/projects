@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "id": "f7dd",
+      "username": "$2a$10$nDBi810HZhveVA/AaAWt/.0EiiY.iE47I/ZBUxiGO9n0Pch0hYERS",
+      "password": "$2a$10$nDBi810HZhveVA/AaAWt/.0EiiY.iE47I/ZBUxiGO9n0Pch0hYERS"
+    },
+    {
+      "id": "98a2",
+      "username": "$2a$10$IhSlUQI9hhjkqOC5hRtF9OiKQbKg47j6/DK1so0D8Oufgz00zUg2S",
+      "password": "$2a$10$IhSlUQI9hhjkqOC5hRtF9OiKQbKg47j6/DK1so0D8Oufgz00zUg2S"
+    },
+    {
+      "id": "7e94",
+      "username": "$2a$10$EmGkW77P2YzaUhuvdo6ireKghu5ZHtKo4gIVAN8JkcxCqklIqMnRG",
+      "password": "$2a$10$EmGkW77P2YzaUhuvdo6ire3kEXJN659YgEw8AlYs.GA3v8dokAHLW"
+    },
+    {
+      "id": "1526",
+      "username": "$2a$10$OUpNymJORNH2816MsxVmYOnmQ9XWpHL2iLJZCVAymk3Hy5bo1pY66",
+      "password": "$2a$10$OUpNymJORNH2816MsxVmYOnmQ9XWpHL2iLJZCVAymk3Hy5bo1pY66"
+    }
+  ]
+}

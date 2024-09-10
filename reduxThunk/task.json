@@ -1,0 +1,46 @@
+{
+  "tasks": [
+    {
+      "id": "e568",
+      "title": "redux thunk and saga",
+      "completed": false,
+      "createdAt": "2024-07-17T06:08:10.747Z"
+    },
+    {
+      "id": "f8c3",
+      "title": "react hooks",
+      "completed": false,
+      "createdAt": "2024-07-17T06:08:23.013Z"
+    }
+  ],
+  "completedTasks": [
+    {
+      "id": "4cbd",
+      "title": "helo",
+      "completed": true,
+      "createdAt": "2024-07-15T04:05:48.321Z",
+      "completedAt": "2024-07-15T04:06:02.407Z"
+    },
+    {
+      "id": "ef0b",
+      "title": "task 1 - resume",
+      "completed": true,
+      "createdAt": "2024-07-15T06:35:46.323Z",
+      "completedAt": "2024-07-15T06:36:09.280Z"
+    },
+    {
+      "id": "fde2",
+      "title": "manager",
+      "completed": true,
+      "createdAt": "2024-07-15T04:05:57.842Z",
+      "completedAt": "2024-07-17T06:07:55.252Z"
+    },
+    {
+      "id": "97df",
+      "title": "hiiii",
+      "completed": true,
+      "createdAt": "2024-07-15T04:05:52.846Z",
+      "completedAt": "2024-07-17T06:07:56.549Z"
+    }
+  ]
+}

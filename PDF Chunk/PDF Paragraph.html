@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PDF Chunker</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+</head>
+<body>
+<h1>PDF Chunker using Paragrah</h1>
+<input type="file" id="pdf-file" accept=".pdf">
+<div id="output"></div>
+<script>
+document.getElementById('pdf-file').addEventListener('change', function(event) {
+   const file = event.target.files[0];
+   if (!file) return;
+   const reader = new FileReader();
+   reader.onload = function(event) {
+       const typedarray = new Uint8Array(event.target.result);
+       const loadingTask = pdfjsLib.getDocument(typedarray);
+       loadingTask.promise.then(pdf => {
+           const chunks = [];
+           const targetWordsPerChunk = 500;
+           // Function to process each page
+           function processPage(pageNum) {
+               return pdf.getPage(pageNum).then(page => {
+                   return page.getTextContent().then(textContent => {
+                       let text = '';
+                       textContent.items.forEach(item => text += item.str + ' ');
+                       const paragraphs = text.split(/\n+/);
+                       paragraphs.forEach(paragraph => {
+                           const words = paragraph.split(/\s+/).filter(word => word.length > 0);
+                           let currentChunk = '';
+                           if (words.length > targetWordsPerChunk) {
+                               for (let i = 0; i < words.length; i += targetWordsPerChunk) {
+                                   const chunk = words.slice(i, i + targetWordsPerChunk).join(' ');
+                                   chunks.push(chunk);
+                               }
+                           } else {
+                               currentChunk += paragraph;
+                               chunks.push(currentChunk);
+                           }
+                       });
+                   });
+               });
+           }
+           // Iterate through each page of the PDF
+           const pagePromises = [];
+           for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
+               pagePromises.push(processPage(pageNum));
+           }
+           // Wait for all page processing promises to resolve
+           Promise.all(pagePromises).then(() => {
+               const finalChunks = [];
+               let currentChunk = '';
+               let currentWordsCount = 0;
+               chunks.forEach(chunk => {
+                   const words = chunk.split(/\s+/).filter(word => word.length > 0);
+                   if (currentWordsCount + words.length > targetWordsPerChunk) {
+                       finalChunks.push(currentChunk.trim());
+                       currentChunk = '';
+                       currentWordsCount = 0;
+                   }
+                   currentChunk += chunk + ' ';
+                   currentWordsCount += words.length;
+               });
+               if (currentChunk.trim().length > 0) {
+                   finalChunks.push(currentChunk.trim());
+               }
+               // Output the chunks
+               const outputDiv = document.getElementById('output');
+               outputDiv.innerHTML = '<h2>Chunks:</h2>';
+               finalChunks.forEach((chunk, index) => {
+                   outputDiv.innerHTML += `<p>Chunk ${index + 1}:</p><p>${chunk}</p>`;
+               });
+           });
+       }).catch(error => {
+           console.error('Error loading PDF:', error);
+       });
+   };
+   reader.readAsArrayBuffer(file);
+});
+</script>
+</body>
+</html>

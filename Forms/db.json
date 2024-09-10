@@ -1,0 +1,76 @@
+{
+  "users": [
+    {
+      "id": "4655",
+      "firstName": "Roopesh",
+      "lastName": "S",
+      "email": "sroopesh6@gmail.com",
+      "countryCode": "",
+      "phoneNumber": "8330920063",
+      "dateOfBirth": "2000-11-23T18:30:00.000Z",
+      "age": 24,
+      "maritalStatus": "Unmarried",
+      "gender": "male",
+      "state": [
+        "Andhra Pradesh"
+      ],
+      "distict": [
+        "Chittoor"
+      ]
+    },
+    {
+      "id": "118e",
+      "firstName": "Shanmugam",
+      "lastName": "Kannappa",
+      "email": "kannapashanu04@gmail.com",
+      "countryCode": "",
+      "phoneNumber": "9440559592",
+      "dateOfBirth": "1972-11-03T18:30:00.000Z",
+      "age": 52,
+      "maritalStatus": "Married",
+      "gender": "male",
+      "state": [
+        "Andhra Pradesh"
+      ],
+      "distict": [
+        "Chittoor"
+      ]
+    },
+    {
+      "id": "9aa8",
+      "firstName": "Dhatchayani",
+      "lastName": "Srinivasan",
+      "email": "dhatchayani17@gmail.com",
+      "countryCode": "",
+      "phoneNumber": "8885882270",
+      "dateOfBirth": "1980-08-16T18:30:00.000Z",
+      "age": 44,
+      "maritalStatus": "Married",
+      "gender": "female",
+      "state": [
+        "Andhra Pradesh"
+      ],
+      "distict": [
+        "Chittoor"
+      ]
+    },
+    {
+      "id": "9443",
+      "firstName": "Dhanusree ",
+      "lastName": "Shanmugam",
+      "email": "dhanusree@gmail.com",
+      "countryCode": "",
+      "phoneNumber": "7013370415",
+      "dateOfBirth": "2005-08-16T18:30:00.000Z",
+      "age": 20,
+      "maritalStatus": "Unmarried",
+      "gender": "female",
+      "state": [
+        "Andhra Pradesh"
+      ],
+      "distict": [
+        "Chittoor"
+      ]
+    }
+  ]
+}
