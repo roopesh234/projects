@@ -1,0 +1,199 @@
+{
+  "users": [
+    {
+      "id": "9508",
+      "name": "roopesh",
+      "email": "sroopesh6@gmail.com",
+      "password": "roopesh",
+      "type": "admin"
+    },
+    {
+      "id": "f460",
+      "name": "surya",
+      "email": "surya@com",
+      "password": "surya",
+      "type": "user"
+    },
+    {
+      "id": "1610",
+      "name": "Pooja",
+      "email": "pooja@com",
+      "password": "Pooja",
+      "type": "user"
+    },
+    {
+      "id": "bc33",
+      "name": "Akhil",
+      "email": "akhil@gmail.com",
+      "password": "akhil",
+      "type": "user"
+    }
+  ],
+  "products": [
+    {
+      "id": "abb4",
+      "image": "butter nan.jpg",
+      "name": "Butter Naan",
+      "category": "Bread",
+      "price": 29
+    },
+    {
+      "id": "5402",
+      "image": "chickenbiryani.jpg",
+      "name": "Chicken biryani",
+      "category": "Biryani - Non Veg",
+      "price": 299
+    },
+    {
+      "id": "d11b",
+      "image": "chilli chicken.jpg",
+      "name": "Chilli Chicken",
+      "category": "Non Veg - Starter",
+      "price": 119
+    },
+    {
+      "id": "1d76",
+      "image": "idli.jpg",
+      "name": "Idly",
+      "category": "Veg - Break Fast",
+      "price": 10
+    }
+  ],
+  "cart": [
+    {
+      "id": "ffbe",
+      "productId": "abb4",
+      "name": "Butter Naan",
+      "userId": "1610",
+      "noofplates": 1,
+      "price": 29
+    },
+    {
+      "id": "14aa",
+      "productId": "1d76",
+      "name": "Idly",
+      "userId": "9508",
+      "noofplates": 1,
+      "price": 10
+    },
+    {
+      "id": "71a1",
+      "image": "chickenbiryani.jpg",
+      "name": "Chicken biryani",
+      "category": "Biryani - Non Veg",
+      "price": 299,
+      "productId": "5402",
+      "noofplates": 1
+    },
+    {
+      "id": "e940",
+      "image": "butter nan.jpg",
+      "name": "Butter Naan",
+      "category": "Bread",
+      "price": 29,
+      "productId": "abb4",
+      "noofplates": 1
+    },
+    {
+      "id": "a179",
+      "productId": "d11b",
+      "name": "Chilli Chicken",
+      "userId": "bc33",
+      "noofplates": 1,
+      "price": 119
+    },
+    {
+      "id": "52a7",
+      "productId": "1d76",
+      "name": "Idly",
+      "userId": "bc33",
+      "noofplates": 1,
+      "price": 10
+    }
+  ],
+  "orders": [
+    {
+      "id": "8af0",
+      "userId": "bc79",
+      "date": "9-7-2024",
+      "products": [
+        {
+          "productId": "c4b9",
+          "name": "Chicken biryani",
+          "price": 476
+        }
+      ]
+    },
+    {
+      "id": "31ae",
+      "userId": "f460",
+      "date": "10-7-2024",
+      "products": [
+        {
+          "productId": "c38b",
+          "name": "Butter Naan",
+          "price": 58
+        },
+        {
+          "productId": "5132",
+          "name": "Chicken biryani",
+          "price": 598
+        },
+        {
+          "productId": "7506",
+          "name": "Chilli Chicken",
+          "price": 238
+        },
+        {
+          "productId": "6239",
+          "name": "Idly",
+          "price": 20
+        }
+      ]
+    },
+    {
+      "id": "7064",
+      "userId": "bc79",
+      "date": "10-7-2024",
+      "products": [
+        {
+          "productId": "80fa",
+          "name": "Chicken biryani",
+          "price": 598
+        },
+        {
+          "productId": "3ce9",
+          "name": "Chilli Chicken",
+          "price": 238
+        }
+      ]
+    },
+    {
+      "id": "60b7",
+      "userId": "bc33",
+      "date": "22-7-2024",
+      "products": [
+        {
+          "productId": "71a1",
+          "name": "Chicken biryani",
+          "price": 299
+        },
+        {
+          "productId": "e940",
+          "name": "Butter Naan",
+          "price": 29
+        },
+        {
+          "productId": "a179",
+          "name": "Chilli Chicken",
+          "price": 119
+        },
+        {
+          "productId": "52a7",
+          "name": "Idly",
+          "price": 10
+        }
+      ]
+    }
+  ]
+}
